@@ -3,9 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 1 of Module A</title>
+    <link rel="stylesheet" href="style.css">
+     <title>HTML Validation Form</title>
 </head>
 <body>
     <h1>Validation Form</h1>
+    <div class="container">
+        <form action="" id="form" class="form">
+            <h2>Sign Up</h2>
+            <div class="form-control"></div>
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter Username">
+                <small>Username is less than 3 letters!</small>
+            </div>
+            <div class="form-control"></div>
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter Email">
+                <small>Email is invalid</small>
+            </div>
+            <div class="form-control"></div>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+                <small>password length is small</small>
+            </div>
+            <div class="form-control"></div>
+                <label for="password-c">Password</label>
+                <input type="password" id="password-c" placeholder="Re-enter password">
+                <small>password not matching</small>
+            </div>
+            <button>Submit</button>            
+        </form>
+        <a href="../index.html">Go Back</a>
+    </div>
 </body>
 </html>
