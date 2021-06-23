@@ -7,33 +7,34 @@
      <title>HTML Validation Form</title>
 </head>
 <body>
-    <h1>Validation Form</h1>
     <div class="container">
+        <img src="assets/logo.png" class="logo-img">
         <form action="" id="form" class="form">
-            <h2>Sign Up</h2>
-            <div class="form-control"></div>
-                <label for="username">Username</label>
+            <h2>Sign Up Form</h2>
+            <br/>
+            <div class="form-control">
+                <!-- <label for="username">Username</label> -->
                 <input type="text" id="username" placeholder="Enter Username">
                 <small>Username is less than 3 letters!</small>
             </div>
-            <div class="form-control"></div>
-                <label for="email">Email</label>
+            <div class="form-control">
+                <!-- <label for="email">Email</label> -->
                 <input type="text" id="email" placeholder="Enter Email">
                 <small>Email is invalid</small>
             </div>
-            <div class="form-control"></div>
-                <label for="password">Password</label>
+            <div class="form-control">
+                <!-- <label for="password">Password</label> -->
                 <input type="password" id="password" placeholder="Enter password">
                 <small>password length is small</small>
             </div>
-            <div class="form-control"></div>
-                <label for="password-c">Password</label>
+            <div class="form-control">
+                <!-- <label for="password-c">Password</label> -->
                 <input type="password" id="password-c" placeholder="Re-enter password">
                 <small>password not matching</small>
             </div>
-            <button>Submit</button>            
+            <button class="btn">Submit</button>            
         </form>
-        <a href="../index.html">Go Back</a>
+        <a href="../index.html" class="home-link">Go Back</a>
     </div>
 </body>
 </html>
