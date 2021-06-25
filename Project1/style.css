@@ -26,7 +26,7 @@ body {
     margin-left:5%;
     padding-top: 50px;
     width: 30%;
-    height: 100%;
+    height: 90vh;
     box-shadow: 5px 5px 8px 8px rgb(128, 128, 128);
 }
 .logo-img{
@@ -36,7 +36,6 @@ body {
 }
 .form-control{
     margin: 10px 0px;
-    font-weight: 600;
 }
 .form-control small{
     color: var(--error-color);
