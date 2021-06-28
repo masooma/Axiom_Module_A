@@ -75,7 +75,7 @@ function checkPass(pass, pass2){
 form.addEventListener('submit', function(e) {
     e.preventDefault();
 
-    check = checkIfRequired([username,email,password,password2]);
+    var check = checkIfRequired([username,email,password,password2]);
     if(check === 0){
         break;
     }
