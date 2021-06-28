@@ -74,10 +74,10 @@ function checkPass(pass, pass2){
 form.addEventListener('submit', function(e) {
     e.preventDefault();
     
+    checkIfRequired([username,email,password,password2]);
     checkInputLength(username,3,10);
     checkInputLength(password,6,30);
     checkEmail(email);
     checkPass(password, password2);
-    checkIfRequired([username,email,password,password2]);
 
 })
