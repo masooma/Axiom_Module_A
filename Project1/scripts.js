@@ -77,11 +77,12 @@ form.addEventListener('submit', function(e) {
 
     var check = checkIfRequired([username,email,password,password2]);
     if(check === 0){
-        break;
+        continue endP;
     }
     checkInputLength(username,3,10);
     checkInputLength(password,6,30);
     checkEmail(email);
     checkPass(password, password2);
+    endP:
 
 })
