@@ -13,6 +13,7 @@ function checkIfRequired(inputArray){
     inputArray.forEach( function(input) {
         if(!input.value){
             showError(input, "This field is required");
+            return 0;
         }
         else {
             showSuccess(input);
@@ -74,7 +75,10 @@ function checkPass(pass, pass2){
 form.addEventListener('submit', function(e) {
     e.preventDefault();
 
-    checkIfRequired([username,email,password,password2]);
+    check = checkIfRequired([username,email,password,password2]);
+    if(check == 0){
+        break;
+    }
     checkInputLength(username,3,10);
     checkInputLength(password,6,30);
     checkEmail(email);
