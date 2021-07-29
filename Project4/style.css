@@ -54,10 +54,11 @@ button:hover{
     justify-content: center;
 }
 .home-link{
-    color: #02154D;
+    color: #000;
     font-weight: 600;
     text-decoration: none;
+    text-align: center;
 }
 .home-link:hover{
-    color: #F79F3C;
+    color: rgb(56, 56, 56);
 }
