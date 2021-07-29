@@ -40,3 +40,11 @@ body{
         width: 90%;
     }
 }
+.home-link{
+    color: #02154D;
+    font-weight: 600;
+    text-decoration: none;
+}
+.home-link:hover{
+    color: #F79F3C;
+}
