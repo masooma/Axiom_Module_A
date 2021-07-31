@@ -7,9 +7,6 @@
 * {
  box-sizing:border-box;
 }
-html {
-    height: 90%;
-}
 body {
     margin-top: 2.5%;
     font-family: 'Lato', 'sans-serif';
@@ -24,14 +21,31 @@ body {
 .container {
     background-color:#fff;
     margin-left:5%;
-    padding-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 40px;
     width: 30%;
-    height: 90vh;
     box-shadow: 5px 5px 8px 8px rgb(128, 128, 128);
 }
+/* Viewports less than 600px*/
+@media only screen and (max-device-width: 600px){
+    .container {
+      width: 90%;
+    }
+  }
+
+/* Viewports less than 900px*/
+@media only screen and (min-device-width: 601px) and (max-device-width: 900px){
+    .container {
+      width: 60%;
+    }
+    .form-control input{
+        width: 70% !important;
+  }
+}
+
 .logo-img{
     width:inherit; 
-    margin: 0% auto 2%;
+    margin: 0% auto 1%;
     
 }
 .form-control{
@@ -51,7 +65,7 @@ body {
     width: 50%;
     padding: 1% 2%;
     line-height: 20px;
-    margin: 2% auto 0%;
+    margin: 1% auto 0%;
     display: block;
 }
 .form-control input:focus{

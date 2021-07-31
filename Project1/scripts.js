@@ -73,7 +73,7 @@ function checkPass(pass, pass2){
 // Event Listener for submit button
 form.addEventListener('submit', function(e) {
     e.preventDefault();
-
+    
     checkIfRequired([username,email,password,password2]);
     checkInputLength(username,3,10);
     checkInputLength(password,6,30);
