@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #daa520;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    color: #fff;
+    font-weight: 500;
+    height:100vh;
+    font-family: 'Lato', sans-serif;
+}
+
+.select-container{
+    margin: 20px 0px;
+}
+
+.select-container select{
+    border-radius: 5px;
+    padding: 2px 8px;
+    margin-left: 10px;
+    appearance: none;
+}
+.row{
+    display: flex;
+}
+.showcase{
+    background-color: rgba(0,0,0,0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+}
+.showcase li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px; 
+}
+.seat{
+    background-color: #483d8b;
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.seat.selected{
+    background-color: teal;
+}
+.seat.occupied{
+    background-color: sienna;
+}
+.seat:nth-of-type(2) {
+    margin-right: 20px;
+}
+.seat:nth-last-of-type(2) {
+    margin-left: 20px;
+}
+.seat:not(.occupied):hover{
+    cursor: pointer;
+    transform: scale(1.25);
+
+}
+.showcase .seat:not(.occupied):hover{
+    cursor: default;
+    transform: scale(1);
+}
+
+.container{
+    perspective: 300px;
+    margin-bottom: 20px;
+}
+
+.screen{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    margin: 20px 0px;
+    transform: rotateX(-45deg);
+    box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+p.text{
+    color: #000;
+}
+ p.text span{
+    color: green;
+    font-weight: 600;
+ }
