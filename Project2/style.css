@@ -94,3 +94,12 @@ p.text{
     color: green;
     font-weight: 600;
  }
+ .home-link{
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+}
+.home-link:hover{
+    color: rgb(56, 56, 56);
+}
