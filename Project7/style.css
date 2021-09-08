@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: chocolate;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    padding-top: 20px;
+    margin: 0;
+    overflow: hidden;
+}
+.game-container{
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40pt;
+    color: #000;
+}
+p{
+    font-family: 'Lato', sans-serif;
+}
+.hangman-container{
+    margin-top: 20px;;
+    fill: transparent;
+    stroke: #fff;
+    stroke-width: 5px;
+    stroke-linecap: round;
+}
+.figure-part{
+    stroke: #000;
+    display:none;
+}
